@@ -1,5 +1,5 @@
 struct ChambreStruct : ChambreProtocol {
-
+    // Propriétés
     var prix: Int
     var identifiant: String
 
@@ -7,7 +7,8 @@ struct ChambreStruct : ChambreProtocol {
         self.prix = prix
         self.identifiant = identifiant
     }
-
+    
+    // Initialiseur
     mutating func ajusterPrix(nouveauPrix: Int){
         if(nouveauPrix <= 0){
             return
@@ -15,6 +16,7 @@ struct ChambreStruct : ChambreProtocol {
         self.prix = nouveauPrix
     }
 
+    // Modificateurs 
     mutating func changerNom(nouveauNom: String){
         self.identifiant = nouveauNom
     }

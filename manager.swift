@@ -16,11 +16,17 @@ struct MyApp {
             address: "14, rue du ruisseau qui coule"
             )
         print("Managing hostel \(my_hostel.name)")
-        let today = Date()
-        print("Today we are \(today)")
-        //var une_Resa : ResaProtocol?
 
-        // Erreur 
-        //une_Resa = ResaProtocol(date_debut: today)
+        let today = Date()
+        let tomorrow = today.addingTimeInterval(24*60*60)
+        print("Today we are \(today)")
+        print("Tomorrow we will be \(tomorrow)")
+
+        var une_Resa : ResaProtocol = ResaStruct(date_debut: today, date_fin: tomorrow, id_client: "1234", id_chambre: "12", prix: 100.0)
+
+        var un_client : ClientProtocol = ClientStruct(firstname: "Jean", lastname: "Dupont", email: "root@localhost", num_tel: "0123456789", id_card: "1234567890")
+
+        var une_chambre : ChambreProtocol = ChambreStruct(prix: 50, identifiant: "123")
+
     }
 }

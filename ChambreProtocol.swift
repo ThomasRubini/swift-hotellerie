@@ -4,6 +4,6 @@ protocol ChambreProtocol {
     // constructeur
     //    init(_ prix: Int, _ identifiant: String)
     // Modificateurs :
-    mutating func ajusterPrix(_ nouveauPrix: Int)
-    mutating func changerNom(_ nouveauNom: String)
+    mutating func ajusterPrix(nouveauPrix: Int)
+    mutating func changerNom(nouveauNom: String)
 }

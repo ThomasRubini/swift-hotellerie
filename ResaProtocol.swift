@@ -1,6 +1,6 @@
 import Foundation
 
-protocol ReservationProtocol {
+protocol ResaProtocol {
     // propriétés
     var date_debut: Date { get set }
     var date_fin: Date { get set }
@@ -13,5 +13,4 @@ protocol ReservationProtocol {
 
     // mise à jour
     mutating func setReservation(debut: Date, fin: Date, id_client: String, id_chambre: String, prix: Float) -> Void
-    mutating func change_date_debut(date: Date)
 }
